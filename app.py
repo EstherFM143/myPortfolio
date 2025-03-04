@@ -25,7 +25,7 @@ def projects():
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
-        # Here you would handle the form submission, e.g., send an email
+        # handling the form submission, e.g., send an emai
         return redirect(url_for('contact'))
     return render_template('contact.html')
 
