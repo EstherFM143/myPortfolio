@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./base2_files/style.css">
+    <link rel="stylesheet" href="./base2_files/line.css">
+    <style>
+        .nav__menu {
+            background-color: #333; /* Optional: Background color for the menu */
+        }
+        .nav__list {
+            display: flex; /* Makes the list items display horizontally */
+            list-style: none; /* Removes the default bullet points */
+            margin: 0;
+            padding: 0;
+        }
+        .nav__item {
+            margin: 0 10px; /* Optional: Adjusts the spacing between the items */
+        }
+        .nav__link {
+            text-decoration: none; /* Removes the default underline from the links */
+            color: white; /* Optional: Text color for the links */
+            padding: 10px 20px; /* Optional: Padding for the links */
+            display: flex;
+            align-items: center;
+        }
+        .nav__link.active-link {
+            background-color: #555; /* Optional: Background color for the active link */
+        }
+    </style>
+  </head>
+  <body oncontextmenu="return false">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="http://127.0.0.1:5000/" class="nav__logo">Esther Francis</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item"><a href="http://127.0.0.1:5000/" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i>Home</a></li>
+            <li class="nav__item"><a href="http://127.0.0.1:5000/about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a></li>
+            <li class="nav__item"><a href="http://127.0.0.1:5000/skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a></li>
+            <li class="nav__item"><a href="http://127.0.0.1:5000/qualification" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Qualification</a></li>
+            <li class="nav__item"><a href="http://127.0.0.1:5000/projects" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects</a></li>
+            <li class="nav__item"><a href="http://127.0.0.1:5000/contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact-Me</a></li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="footer__container container grid">
+            <div>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/esther-francis-mtitu-87bb60292" class="footer__social" target="_blank"><i class="uil uil-linkedin"></i></a>
+                    <a href="https://github.com/EstherFM143" class="footer__social" target="_blank"><i class="uil uil-github"></i></a>
+                </div>
+            </div>
+            <ul class="footer__links">
+                <li><a href="http://127.0.0.1:5000/qualification" class="footer__link">Qualification</a></li>
+                <li><a href="http://127.0.0.1:5000/projects" class="footer__link">Portfolio</a></li>
+                <li><a href="http://127.0.0.1:5000/contact" class="footer__link">Contact-Me</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      
+<section class="home section" id="home">
+  <div class="home__container container grid">
+    <div class="home__content grid">
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/esther-francis-mtitu-87bb60292" target="_blank" class="home__social-icon"><i class="uil uil-linkedin-alt home__icon"></i></a>
+        <a href="https://github.com/EstherFM143" target="_blank" class="home__social-icon"><i class="uil uil-github-alt home__icon"></i></a>
+      </div>
+      <div class="home__img">
+        <img src="./base2_files/Pro.jpg" alt="Profile Image">
+      </div>
+      <div class="home__data">
+        <h1 class="home__title">Welcome to my portfolio. Tervetuloa!</h1>
+        <p class="home__description">A second year undergraduate Electronics and Communications engineering student at <strong>University of Oulu</strong>, Oulu.</p>
+        <a href="http://127.0.0.1:5000/#contact" class="button button--flex">Feel free to Contact me<i class="uil uil-message button__icon"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+        <p class="footer__copy">© Esther 2025</p>
+      </div>
+    </div></footer>
+
+</body></html>
