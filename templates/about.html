@@ -1,21 +1,77 @@
-{% extends "base.html" %}
-{% block title %}About Me{% endblock %}
-{% block content %}
-<section class="about section" id="about">
-  <h2 class="section__title">About Me</h2>
-  <span class="section__subtitle">My introduction</span>
-  <div class="about__container container grid">
-    <img src="{{ url_for('static', filename='assets/img/about.jpg') }}" alt="About Image" class="about__img">
-    <div class="about__data">
-      <p class="about__description">I'm a proactive and motivated Electronics and Communication Engineering student at the University of Oulu, passionate about wireless technology and electronics design. I’m eager to gain hands-on experience to complement my studies and develop the practical skills needed for a future in IT and engineering, contributing to cutting-edge innovations in the field. Let’s connect and collaborate!</p>
-      <div class="about__info">
-        <div><span class="about__info-title">126</span><span class="about__info-name">Credits <br />January 2025</span></div>
-        <div><span class="about__info-title"> 4</span><span class="about__info-name">University Projects</span></div>
-      </div>
-      <div class="about__buttons">
-        <a download href="{{ url_for('static', filename='assets/Esther_Francis_General_CV.pdf') }}" class="button button--flex">Download General CV<i class="fas fa-download button__icon"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <style>
+        .nav__menu {
+            background-color: #333; /* Optional: Background color for the menu */
+        }
+        .nav__list {
+            display: flex; /* Makes the list items display horizontally */
+            list-style: none; /* Removes the default bullet points */
+            margin: 0;
+            padding: 0;
+        }
+        .nav__item {
+            margin: 0 10px; /* Optional: Adjusts the spacing between the items */
+        }
+        .nav__link {
+            text-decoration: none; /* Removes the default underline from the links */
+            color: white; /* Optional: Text color for the links */
+            padding: 10px 20px; /* Optional: Padding for the links */
+            display: flex;
+            align-items: center;
+        }
+        .nav__link.active-link {
+            background-color: #555; /* Optional: Background color for the active link */
+        }
+    </style>
+</head>
+<body oncontextmenu="return false">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">Esther Francis</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item"><a href="/" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i>Home</a></li>
+                    <li class="nav__item"><a href="/about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a></li>
+                    <li class="nav__item"><a href="/skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a></li>
+                    <li class="nav__item"><a href="/qualification" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Qualification</a></li>
+                    <li class="nav__item"><a href="/projects" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects</a></li>
+                    <li class="nav__item"><a href="/contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact-Me</a></li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="footer__container container grid">
+                <div>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/esther-francis-mtitu-87bb60292" class="footer__social" target="_blank"><i class="uil uil-linkedin"></i></a>
+                        <a href="https://github.com/EstherFM143" class="footer__social" target="_blank"><i class="uil uil-github"></i></a>
+                    </div>
+                </div>
+                <ul class="footer__links">
+                    <li><a href="/qualification" class="footer__link">Qualification</a></li>
+                    <li><a href="/projects" class="footer__link">Portfolio</a></li>
+                    <li><a href="/contact" class="footer__link">Contact-Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <p class="footer__copy">&#169; Esther 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
