@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Projects{% endblock %}
+{% block content %}
+<section class="projects section" id="projects">
+  <h2 class="section__title">Projects</h2>
+  <span class="section__subtitle">My works</span>
+  <div class="projects__container container grid">
+
+    <!-- Project 1 -->
+    <div class="project__data">
+      <h3 class="project__title">Elementary Programming: Minesweeper Game in Python</h3>
+      <p class="project__description">
+        <strong>Skills Gained:</strong> Python programming, game development, problem-solving, algorithm design, handling 2D arrays, recursive logic.<br>
+        <strong>Project Description:</strong> Built a Minesweeper game in Python, featuring customizable grid dimensions and mine placement. Implemented tile reveal logic, recursive uncovering of empty tiles, and win/loss conditions. Used provided libraries (sweeperlib.py) and graphics for the game interface.
+      </p>
+      <a href="https://github.com/EstherFM143/Elementary-programming" target="_blank" class="button button--flex">
+        View on GitHub<i class="fas fa-external-link-alt button__icon"></i>
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project__data">
+      <h3 class="project__title">Introduction to Internet: TCP/UDP Client-Server Communication</h3>
+      <p class="project__description">
+        <strong>Skills Gained:</strong> Network programming, TCP/UDP protocols, socket programming, message parsing, error handling, encryption, and multipart message handling.<br>
+        <strong>Project Description:</strong> Created a program to communicate with a server using TCP and UDP protocols. Implemented basic functionality for sending/receiving messages, parsing data, and translating word lists. Added optional features like encryption, parity checks, and multipart message handling.
+      </p>
+      <a href="https://github.com/EstherFM143/Intro_to_Internet" target="_blank" class="button button--flex">
+        View on GitHub<i class="fas fa-external-link-alt button__icon"></i>
+      </a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project__data">
+      <h3 class="project__title">Digital Techniques 2: Microprocessor CPU Core Design</h3>
+      <p class="project__description">
+        <strong>Skills Gained:</strong> SystemVerilog programming, RTL design, CPU architecture, logic synthesis, formal verification, gate-level simulation, clock frequency optimization.<br>
+        <strong>Project Description:</strong> Designed and implemented a 16-bit microprocessor CPU core in SystemVerilog. Developed modules for ALU, registers, and control units. Verified functionality using simulation, synthesis, and formal equivalence checks. Optimized clock frequency and implemented custom instructions (e.g., averaging two signed numbers).
+      </p>
+      <a href="https://github.com/EstherFM143/Digital-techniques2" target="_blank" class="button button--flex">
+        View on GitHub<i class="fas fa-external-link-alt button__icon"></i>
+      </a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project__data">
+      <h3 class="project__title">Introduction to Electronics: Circuit Design and PCB Development</h3>
+      <p class="project__description">
+        <strong>Skills Gained:</strong> Circuit design, simulation (TinkerCad), PCB design (KiCad), schematic creation, layout editing, and generating manufacturing files.<br>
+        <strong>Project Description:</strong> Designed and simulated a circuit in TinkerCad that responds to physical activity. Created a PCB layout using KiCad, including schematic design, copper plane editing, and generating work files for manufacturing.
+      </p>
+      <a href="https://github.com/EstherFM143/Intro_to_Electronics" target="_blank" class="button button--flex">
+        View on GitHub<i class="fas fa-external-link-alt button__icon"></i>
+      </a>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project__data">
+      <h3 class="project__title">Portfolio Website Creation using HTML, CSS, and Python</h3>
+      <p class="project__description">
+        <strong>Skills Gained:</strong> Web development, HTML/CSS for front-end design, Python for back-end functionality, responsive design, and deployment.<br>
+        <strong>Project Description:</strong> Designed and developed a personal portfolio website to showcase projects and skills. Used HTML and CSS for the front-end layout and styling, ensuring a responsive and visually appealing design. Integrated Python for back-end functionality, such as form handling and dynamic content rendering. Deployed the website for public access.
+      </p>
+      <a href="https://github.com/EstherFM143/myPortfolio" target="_blank" class="button button--flex">
+        View on GitHub<i class="fas fa-external-link-alt button__icon"></i>
+      </a>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project__data">
+      <h3 class="project__title">Computer Systems: Morse Code Communication Device using SensorTag</h3>
+      <p class="project__description">
+        <strong>Skills Gained:</strong> Embedded systems programming, sensor integration (MPU9250 accelerometer/gyroscope), UART communication, Morse code encoding/decoding, real-time operating systems (TI-RTOS), state machine design.<br>
+        <strong>Project Description:</strong> Developed a communication device using the SensorTag board to send and receive Morse code messages. Implemented movement detection using the MPU9250 sensor to translate gestures into Morse symbols, transmitted via UART to a workstation. Designed a minimal user interface with LEDs and a buzzer for feedback.
+      </p>
+      <a href="https://github.com/EstherFM143/Computer-Systems" target="_blank" class="button button--flex">
+        View on GitHub<i class="fas fa-external-link-alt button__icon"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
