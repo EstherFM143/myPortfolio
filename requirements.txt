@@ -1,0 +1,10 @@
+Flask
+gunicorn
+python-dotenv
+
+flask-sqlalchemy
+psycopg2-binary  # For PostgreSQL
+
+flask-login
+flask-wtf
+requests
